@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <String-array name="contacts">
+        <item>이준영 [yearnning@kaist.ac.kr] </item>
+        <item>배재성 </item>
+        <item>Chang Dae Park </item>
+        <item>이세연 </item>
+        <item>곱슬최씨 </item>
+        <item>Choong-Hwan Lee </item>
+        <item>Kyumin Sim </item>
+        <item>Goh Wei Xiang </item>
+        <item>임이조 [joyi-yim@hotmail.com] </item>
+        <item>김건우 </item>
+        <item>이창환 </item>
+        <item>이재광 </item>
+        <item>박채훈 </item>
+        <item>이승우 </item>
+        <item>김장수 </item>
+        <item>김건일 </item>
+        <item>김훈 </item>
+        <item>권윤환 </item>
+        <item>Sedong Nam </item>
+        <item>강석흔 </item>
+        <item>박은우 </item>
+        <item>이제오 </item>
+        <item>김영욱 [youngwook@outlook.com] </item>
+        <item>Jae Ryoung Ka </item>
+        <item>설현호 </item>
+        <item>이도훈 </item>
+        <item>최영현 </item>
+        <item>김형철 </item>
+        <item>김성아 </item>
+        <item>Andy WS Ahn </item>
+        <item>유제호 </item>
+        <item>Jin Chung </item>
+        <item>이의영 </item>
+        <item>Jun Young Park </item>
+        <item>장성원 [chron93@naver.com] </item>
+        <item>이승헌 </item>
+        <item>Tae-Hee Kim </item>
+        <item>고동현 </item>
+        <item>전홍천 </item>
+        <item>이경태 </item>
+        <item>희빈 </item>
+        <item>조현영 </item>
+        <item>윤완희 </item>
+        <item>배영목 [youngmok92@gmail.com] </item>
+        <item>윤정수 </item>
+        <item>박새결 </item>
+        <item>우지철 </item>
+        <item>유병호 </item>
+        <item>Hee Koo </item>
+        <item>안순규 </item>
+        <item>김종후 </item>
+        <item>강도언 </item>
+        <item>김기범 </item>
+        <item>윤벙헌 </item>
+        <item>Hojin Lim </item>
+        <item>Min Young Choi </item>
+        <item>강성빈 </item>
+        <item>Kwonho Jeon </item>
+        <item>곽승준 </item>
+        <item>김연주 </item>
+        <item>Takachiho Hieda </item>
+        <item>황상필 </item>
+        <item>김지훈 </item>
+        <item>Yun Jang </item>
+        <item>최성현 </item>
+        <item>박종식 </item>
+        <item>조남주 </item>
+        <item>김태윤 </item>
+        <item>손인범 </item>
+        <item>김미경 </item>
+        <item>김예걸 </item>
+        <item>전진혁 </item>
+        <item>김상현 </item>
+        <item>김도형 </item>
+        <item>김해성 </item>
+        <item>신용환 </item>
+        <item>윤규섭 </item>
+        <item>Tae Young Kil </item>
+        <item>이진우 </item>
+        <item>최영식 </item>
+        <item>Jung Yun Chin </item>
+        <item>장원석 </item>
+        <item>이광렬 </item>
+        <item>Juan Yeonghwan Park </item>
+        <item>임찬우 </item>
+        <item>Sylenth Izy </item>
+        <item>남기훈 </item>
+        <item>정인호 </item>
+        <item>김건석 </item>
+        <item>Joonwoo Cho </item>
+        <item>박세호 </item>
+        <item>심세희 </item>
+        <item>김채훈 </item>
+        <item>신재원 </item>
+        <item>정성윤 </item>
+        <item>박상현 </item>
+        <item>Ji Woon Choi </item>
+        <item>박도건 </item>
+        <item>어우경 </item>
+        <item>손민식 </item>
+        <item>서정규 </item>
+        <item>진재언 </item>
+        <item>허명현 </item>
+        <item>노광식 </item>
+        <item>차호성 </item>
+        <item>Yeongsik Lim </item>
+        <item>정태훈 </item>
+        <item>이수환 </item>
+        <item>Real Real </item>
+        <item>이창윤 </item>
+        <item>박한솔 </item>
+        <item>장원우 </item>
+        <item>황창호 [ch.hwang128@gmail.com] </item>
+        <item>조은수 </item>
+        <item>Ninh Pham </item>
+        <item>임민규 </item>
+        <item>이정열 </item>
+        <item>송재민 </item>
+        <item>제갈장환 </item>
+        <item>김종수 </item>
+        <item>김영우 </item>
+        <item>박준근 </item>
+        <item>Seung-Yeon Lee </item>
+        <item>Eunwha Eunice Jhee </item>
+        <item>이기아 </item>
+        <item>한순규 </item>
+        <item>최세진 </item>
+        <item>Woong-rae Kim </item>
+        <item>윤희뭉 </item>
+        <item>강재원 </item>
+        <item>김종현 </item>
+        <item>조영윤 </item>
+        <item>Brian Son </item>
+        <item>이주화 </item>
+        <item>윤동혁 </item>
+        <item>서지원 </item>
+        <item>류승균 </item>
+        <item>주현탁 </item>
+        <item>Jin Choi </item>
+        <item>김한호 </item>
+        <item>Jaehyun Baek </item>
+        <item>백상하 </item>
+        <item>JungSu Jang [captainj24@naver.com] </item>
+        <item>이경표 </item>
+        <item>주란 </item>
+        <item>금병락 </item>
+        <item>김민선 </item>
+        <item>윤석종 </item>
+        <item>왕지성 </item>
+        <item>양선석 </item>
+        <item>Solee Kim </item>
+        <item>오하림 </item>
+        <item>Jinhyub Kim </item>
+        <item>진태원 </item>
+        <item>조수경 </item>
+        <item>하동경 </item>
+        <item>조성제 </item>
+        <item>김한을 </item>
+        <item>남관우 </item>
+        <item>공예빈 </item>
+        <item>정원석 </item>
+        <item>황정훈 </item>
+        <item>Nayeon Kim </item>
+        <item>김현호 </item>
+        <item>설경윤 </item>
+        <item>류광영 </item>
+        <item>최원준 </item>
+        <item>정재성 </item>
+        <item>이상화 </item>
+        <item>김정아 </item>
+        <item>박오리 </item>
+        <item>최수진 </item>
+        <item>김현진 </item>
+        <item>홍길동 </item>
+        <item>이지은 </item>
+        <item>Minsung Kim </item>
+        <item>김수철 </item>
+        <item>Seyoung Jessie Park </item>
+        <item>이윤석 </item>
+        <item>김민성 </item>
+        <item>정대엽 </item>
+        <item>유지영 </item>
+        <item>장정훈 </item>
+        <item>고효상 </item>
+        <item>차상민 </item>
+        <item>문기석 </item>
+        <item>천성준 </item>
+        <item>김명재 </item>
+        <item>진호원 </item>
+        <item>김덕훈 </item>
+        <item>이음 </item>
+        <item>김지환 </item>
+        <item>박소연 </item>
+        <item>차지윤 </item>
+        <item>김정현 </item>
+        <item>박시연 </item>
+        <item>문희봉 </item>
+        <item>이대식 </item>
+        <item>이혁희 </item>
+        <item>성예찬 </item>
+        <item>문준혁 </item>
+        <item>유창석 </item>
+        <item>김혜림 </item>
+        <item>정수정 </item>
+        <item>강정수 </item>
+        <item>정다솔 </item>
+        <item>전승채 </item>
+        <item>Ripond Oh </item>
+        <item>카이마루 </item>
+        <item>정기백 </item>
+        <item>김현성 </item>
+        <item>구자헌 </item>
+        <item>노유승 </item>
+        <item>이무성 </item>
+        <item>홍정표 </item>
+        <item>이민아 </item>
+        <item>김지원 </item>
+        <item>이한솔 </item>
+        <item>이상석 </item>
+        <item>박중배 </item>
+        <item>이영제 </item>
+        <item>정민주 </item>
+        <item>남석현 </item>
+        <item>송민석 </item>
+        <item>이동훈 </item>
+        <item>Hwisoo Kim </item>
+        <item>손성찬 </item>
+        <item>오석현 </item>
+        <item>이한나 </item>
+        <item>박현욱 </item>
+        <item>전진우 </item>
+        <item>정민소 </item>
+        <item>탁주환 </item>
+        <item>Gichan Lee </item>
+        <item>이진호 </item>
+        <item>최민정 </item>
+        <item>백경진 </item>
+        <item>강성모 </item>
+        <item>조명식 </item>
+        <item>이유진 </item>
+        <item>김형수 </item>
+        <item>김정담 </item>
+        <item>김강용 </item>
+        <item>홍상표 </item>
+        <item>신영호 </item>
+        <item>이유리 </item>
+        <item>장수범 </item>
+        <item>진유현 </item>
+        <item>백지혜 </item>
+        <item>임도영 </item>
+        <item>서석현 </item>
+        <item>이성원 </item>
+        <item>주현석 [shawn1995@naver.com] </item>
+        <item>이성우 </item>
+        <item>허준 </item>
+        <item>이명재 </item>
+        <item>박찬수 </item>
+        <item>정화영 </item>
+        <item>김지섭 </item>
+        <item>김한주 </item>
+        <item>김종휘 </item>
+        <item>한별이 </item>
+        <item>Dahun Kim </item>
+        <item>Do Hyeon AN </item>
+        <item>이상엽 </item>
+        <item>박동규 </item>
+        <item>노동현 </item>
+        <item>이용재 </item>
+        <item>김도형 </item>
+        <item>손규민 </item>
+        <item>성재호 </item>
+        <item>박경현 [guspk0212@kaist.ac.kr] </item>
+        <item>최연지 </item>
+        <item>김창원 </item>
+        <item>정채이 </item>
+        <item>이기욱 </item>
+        <item>김이석 </item>
+        <item>장일홍 </item>
+        <item>김주환 </item>
+        <item>Miso Lee </item>
+        <item>진성호 </item>
+        <item>임승환 </item>
+        <item>오유라 </item>
+        <item>오진석 </item>
+        <item>나예은 </item>
+        <item>김민재 </item>
+        <item>허웅 </item>
+        <item>함우희 </item>
+        <item>임창준 </item>
+        <item>진동완 </item>
+        <item>박현지 </item>
+        <item>이찬호 </item>
+        <item>송민규 </item>
+        <item>조재건 </item>
+        <item>허우혁 </item>
+        <item>최병욱 </item>
+        <item>김완태 </item>
+        <item>송용준 </item>
+        <item>유정민 [polar0522@naver.com] </item>
+        <item>정동욱 </item>
+        <item>박찬석 </item>
+        <item>공민우 </item>
+        <item>장영수 </item>
+        <item>정용록 </item>
+        <item>엄인배 </item>
+        <item>전익근 </item>
+        <item>박효진 </item>
+        <item>서석현 </item>
+        <item>윤덕화 </item>
+        <item>어수경 </item>
+        <item>채정훈 </item>
+        <item>김종범 </item>
+        <item>정재헌 </item>
+        <item>송민진 </item>
+        <item>김지헌 </item>
+        <item>박흥식 </item>
+        <item>이재덕 </item>
+        <item>신기성 </item>
+        <item>정민균 </item>
+        <item>박지혁 </item>
+        <item>조민기 </item>
+        <item>손성민 </item>
+        <item>정영운 [93jyw@naver.com] </item>
+        <item>정연욱 </item>
+        <item>김경화 </item>
+        <item>박경희 </item>
+        <item>김종윤 </item>
+        <item>이주호 </item>
+        <item>김정현 </item>
+        <item>정진홍 </item>
+        <item>정희연 </item>
+        <item>이정화 </item>
+        <item>한성진 </item>
+        <item>이주영 </item>
+        <item>김인아 </item>
+        <item>구지민 </item>
+        <item>이대준 </item>
+        <item>공은지 </item>
+        <item>장보규 </item>
+        <item>강하연 </item>
+        <item>최석민 </item>
+        <item>박수배 </item>
+        <item>강남규 </item>
+        <item>김지훈 </item>
+        <item>박경서 </item>
+        <item>홍목연 </item>
+        <item>황총연 </item>
+        <item>박민준 </item>
+        <item>박경태 </item>
+        <item>오재용 </item>
+        <item>강나윤 </item>
+        <item>조원희 </item>
+        <item>김기섭 </item>
+        <item>김태수 </item>
+        <item>임현규 </item>
+        <item>김황희 </item>
+        <item>전진원 </item>
+        <item>김소정 </item>
+        <item>정이영 </item>
+        <item>이재준 </item>
+        <item>Suyoung Choi </item>
+        <item>심하진 </item>
+        <item>이시우 </item>
+        <item>조영진 </item>
+        <item>박태건 </item>
+        <item>조성민 </item>
+        <item>박수산 </item>
+        <item>김주덕 </item>
+        <item>장재빈 </item>
+        <item>김민우 </item>
+        <item>조성원 </item>
+        <item>김다솔 </item>
+        <item>민동영 </item>
+        <item>박종한 </item>
+        <item>방준형 </item>
+        <item>박상현 </item>
+        <item>방진 </item>
+        <item>배준영 </item>
+        <item>김동섭 </item>
+        <item>박영규 </item>
+        <item>정준 </item>
+        <item>Do Yeon Rhee </item>
+        <item>최윤호 </item>
+        <item>김민진 </item>
+        <item>김성관 </item>
+        <item>심진우 </item>
+        <item>김은혜 </item>
+        <item>노태형 </item>
+        <item>안세혁 </item>
+        <item>이영선 </item>
+        <item>마권도 </item>
+        <item>임현 </item>
+        <item>배민경 </item>
+        <item>김재영 </item>
+        <item>임기태 </item>
+        <item>류상렬 </item>
+        <item>김태하 </item>
+        <item>장준석 </item>
+        <item>임재환 </item>
+        <item>정영섭 </item>
+        <item>김진격 </item>
+        <item>장재영 </item>
+        <item>오영훈 [youngoh1995@kaist.ac.kr] </item>
+        <item>노영일 </item>
+        <item>고우람 </item>
+        <item>박대순 </item>
+        <item>노지연 </item>
+        <item>김성훈 </item>
+        <item>YoonHyeok Lee </item>
+        <item>김민수 </item>
+        <item>김동욱 </item>
+        <item>손현우 </item>
+        <item>표재찬 </item>
+        <item>박찬영 </item>
+        <item>최시라 </item>
+        <item>Chang Hak Yeon </item>
+        <item>문소진 </item>
+        <item>예승비 </item>
+        <item>Gabin An </item>
+        <item>김시운 </item>
+        <item>정수현 </item>
+        <item>배성환 </item>
+        <item>이주형 </item>
+        <item>Jonghyun Kim </item>
+        <item>김성후 </item>
+        <item>주민규 </item>
+        <item>박현재 </item>
+        <item>이경훈 </item>
+        <item>신중한 </item>
+        <item>박성진 </item>
+        <item>신동윤 </item>
+        <item>김호영 </item>
+        <item>정도현 </item>
+        <item>김남규 </item>
+        <item>전영훈 </item>
+        <item>신홍주 </item>
+        <item>박민정 </item>
+        <item>김문수 </item>
+        <item>전지현 </item>
+        <item>홍쌤동훈 </item>
+        <item>한나래 </item>
+        <item>진영우 </item>
+        <item>이정호 </item>
+        <item>박지언 </item>
+        <item>이지훈 </item>
+        <item>박평제 </item>
+        <item>김준희 </item>
+        <item>류호찬 </item>
+        <item>이현우 </item>
+        <item>김민수 </item>
+        <item>오동석 </item>
+        <item>김경준 </item>
+        <item>이희승 </item>
+        <item>권한슬 </item>
+        <item>김동현 </item>
+        <item>문지원 </item>
+        <item>장범진 </item>
+        <item>임선호 </item>
+        <item>차정민 </item>
+        <item>조창우 </item>
+        <item>이주형 </item>
+        <item>김동준 </item>
+        <item>조인성 </item>
+        <item>이종민 </item>
+        <item>김현준 </item>
+        <item>박성규 </item>
+        <item>김백석 </item>
+        <item>안정호 </item>
+        <item>구평모 </item>
+        <item>김민경 </item>
+        <item>김원일 </item>
+        <item>김태겸 </item>
+        <item>조현수 </item>
+        <item>김재현 </item>
+        <item>박건희 </item>
+        <item>김찬영 </item>
+        <item>박신 </item>
+        <item>이태송 </item>
+        <item>김동화 </item>
+        <item>김기주 </item>
+        <item>임선우 </item>
+        <item>김소혜 </item>
+        <item>차재현 </item>
+        <item>김은미 </item>
+        <item>김지후 </item>
+        <item>김기훈 </item>
+        <item>지진우 </item>
+        <item>이신영 </item>
+        <item>남유진 </item>
+        <item>정대엽 </item>
+        <item>양홍석 </item>
+        <item>박정우 </item>
+        <item>박종훈 </item>
+        <item>김동진 </item>
+        <item>김용진 </item>
+        <item>남기훈 </item>
+        <item>조성현 </item>
+        <item>Sangmin Lee </item>
+        <item>이찬형 </item>
+        <item>Soowon Kang </item>
+        <item>강연수 </item>
+        <item>정세영 </item>
+        <item>김도훈 </item>
+        <item>한언규 </item>
+        <item>Hyo Eun Kwon </item>
+        <item>김태우 </item>
+
+    </String-array>
+</resources>
