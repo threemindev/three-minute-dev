@@ -10,7 +10,7 @@ Retort Development&trade; provides opportunities for the non-experienced to beco
 * [MrGomDev@gmail.com][gimun official email]
 * [GimunLee@kaist.ac.kr][gimun private email] - The lead developer
 ## Contributors
-* [Gimun Lee](https://www.linkedin.com/in/gimunlee/) - [GimunLee@kaist.ac.kr][gimun private email]
+* [Gimun Lee](https://www.linkedin.com/in/gimunlee/) - [GimunLee@kaist.ac.kr][gimunlee@kaist.ac.kr]
 
 [facebook page]: https://www.facebook.com/threemindev/
 [twitch]: https://www.twitch.tv/mrgomdev
