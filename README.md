@@ -16,5 +16,5 @@ Retort Development&trade; provides opportunities for the non-experienced to beco
 [twitch]: https://www.twitch.tv/mrgomdev
 [slack]: threemindev.slack.com
 
-[gimun official email]: mrgomdev@gmail.com
-[gimun private email]: gimunlee@kaist.ac.kr
+[gimun official email]: <mrgomdev@gmail.com>
+[gimun private email]: <gimunlee@kaist.ac.kr>
