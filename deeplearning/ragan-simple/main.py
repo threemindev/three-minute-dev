@@ -34,7 +34,7 @@ def gray_image_array_to_normalized(x: np.ndarray):
 
 
 #
-def train(real_data:np.ndarray, target_epochs: int, batch_size: int, train_label: str, random_dims: int, image_shape: Collection[int], result_dir_path: str='result', load_epoch=None):
+def train(real_data:np.ndarray, generator: Model, discriminator: Model, target_epochs: int, batch_size: int, train_label: str, random_dims: int, image_shape: Collection[int], result_dir_path: str='result', load_epoch=None):
     if load_epoch is not None:
         raise NotImplementedError('load_epoch is not supported yet')
     if not isinstance(real_data, np.ndarray):
@@ -43,14 +43,13 @@ def train(real_data:np.ndarray, target_epochs: int, batch_size: int, train_label
         raise ValueError('real_data should be Grayscale or RGB images dataset')
     if batch_size <= 0:
         raise ValueError('batch_size should be a positive integer')
-    if random_dims <= 0:
-        raise ValueError('random_dims should be a positive integer')
-    if len(image_shape) != 3:
+    generator_input_shape = [int(item) for item in generator.get_input_shape_at(0)[1:]]
+    if len(generator_input_shape) != 1 or random_dims != generator_input_shape[0]:
+        raise ValueError('wrong random_dims')
+    discriminator_input_shape = [int(item) for item in discriminator.get_input_shape_at(0)[1:]]
+    if len(discriminator_input_shape) != 3 or discriminator_input_shape != list(image_shape):
         raise ValueError('image_shape is not a shape with size and channels')
 
-    #
-    generator = build_cifar10_generator(random_dims=random_dims)
-    discriminator = build_cifar10_discriminator(image_shape=image_shape)
     generator.summary()
     discriminator.summary()
 
@@ -115,8 +114,12 @@ def main():
     train_label = 'cifar'
 
     real_data = keras.datasets.cifar10.load_data()[0][0]
+    generator = build_cifar10_generator(random_dims=64)
+    discriminator = build_cifar10_discriminator(image_shape=(32, 32, 3))
 
     train(real_data=real_data,
+          generator=generator,
+          discriminator=discriminator,
           target_epochs=30,
           batch_size=64,
           train_label=train_label,
