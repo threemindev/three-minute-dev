@@ -1,9 +1,9 @@
-from models import build_mnist_generator
-from models import build_discriminator
+from models import build_mnist_generator, build_cifar10_generator
+from models import build_mnist_discriminator, build_cifar10_discriminator
 from models import build_compiled_ragan_trainers
 from models import leaky_relu
 
-from keras.datasets.mnist import load_data
+import keras.datasets
 
 from keras.models import Model, load_model
 
@@ -25,11 +25,11 @@ def denormalized(x: np.ndarray):
     return (x * 255.).astype('u1')
 
 
-def normalized_to_image_array(x: np.ndarray):
+def normalized_to_gray_image_array(x: np.ndarray):
     return np.squeeze(denormalized(x), axis=-1)
 
 
-def image_array_to_normalized(x: np.ndarray):
+def gray_image_array_to_normalized(x: np.ndarray):
     return np.expand_dims(normalized(x), axis=-1)
 
 
@@ -49,8 +49,8 @@ def train(real_data:np.ndarray, target_epochs: int, batch_size: int, train_label
         raise ValueError('image_shape is not a shape with size and channels')
 
     #
-    generator = build_mnist_generator(random_dims=random_dims)
-    discriminator = build_discriminator(image_shape=image_shape)
+    generator = build_cifar10_generator(random_dims=random_dims)
+    discriminator = build_cifar10_discriminator(image_shape=image_shape)
     generator.summary()
     discriminator.summary()
 
@@ -66,7 +66,7 @@ def train(real_data:np.ndarray, target_epochs: int, batch_size: int, train_label
         np.random.shuffle(real_data)
         batch_tqdm = tqdm(range(len(real_data) // batch_size), desc='batches', position=1)
         for batch_index in batch_tqdm:
-            batch_real = image_array_to_normalized(real_data[batch_index * batch_size:(batch_index + 1) * batch_size])
+            batch_real = normalized(real_data[batch_index * batch_size:(batch_index + 1) * batch_size])
             batch_random = np.random.randn(4, batch_size, random_dims)
 
             losses[0] = discriminator_trainer_real.train_on_batch(x=[batch_real, batch_random[0]], y=np.ones(shape=(batch_size, 1)))
@@ -102,7 +102,7 @@ def predict(generator_path: str, sample_count: int, save_dir_path: str=None, sho
     #
     predicted = model.predict(np.random.randn(sample_count, *model_input_shape))
     for i in range(sample_count):
-        image = Image.fromarray(normalized_to_image_array(predicted[i])).resize((28 * 4, 28 * 4))
+        image = Image.fromarray(denormalized(predicted[i])).resize((128, 128), resample=Image.BICUBIC)
         if save_dir_path is not None:
             image.save(os.path.join(save_dir_path, '{}_{}_{:02}.png'.format(label_prefix, label_index, i)))
         if show:
@@ -111,14 +111,16 @@ def predict(generator_path: str, sample_count: int, save_dir_path: str=None, sho
 
 #
 def main():
-    train_label = 'mnist'
+    train_label = 'cifar'
 
-    train(real_data=load_data()[0][0],
+    real_data = keras.datasets.cifar10.load_data()[0][0]
+
+    train(real_data=real_data,
           target_epochs=30,
           batch_size=64,
           train_label=train_label,
           random_dims=64,
-          image_shape=(28, 28, 1),
+          image_shape=real_data.shape[1:],
           result_dir_path='result')
     predict(generator_path='./{}_g.h5'.format(train_label), sample_count=5, save_dir_path='result')
 
