@@ -57,7 +57,8 @@ def train(real_data:np.ndarray, target_epochs: int, batch_size: int, train_label
     discriminator_trainer_real, discriminator_trainer_fake, generator_trainer_real, generator_trainer_fake = build_compiled_ragan_trainers(generator=generator,
                                                                                                                                            discriminator=discriminator,
                                                                                                                                            batch_size=batch_size,
-                                                                                                                                           use_rmsprop=True)
+                                                                                                                                           use_rmsprop=True,
+                                                                                                                                           learning_rate=1e-3)
 
     #
     epoch_tqdm =tqdm(range(target_epochs), desc='epochs', position=0)

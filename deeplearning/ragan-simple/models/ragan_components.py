@@ -27,7 +27,7 @@ class BatchAverageLayer(Lambda):
         super(BatchAverageLayer, self).__init__(function=_batch_average, *args, **kwargs)
 
 
-def build_compiled_ragan_trainers(generator: Model, discriminator: Model, batch_size: int, use_rmsprop: bool=True):
+def build_compiled_ragan_trainers(generator: Model, discriminator: Model, batch_size: int, use_rmsprop: bool=True, learning_rate: float=1e-4):
     generator_old_trainable = generator.trainable
     discriminator_old_trainable = discriminator.trainable
 
@@ -38,15 +38,15 @@ def build_compiled_ragan_trainers(generator: Model, discriminator: Model, batch_
 
     discriminator_trainer_real = Model(inputs=[image_inp, random_inp], outputs=[Activation('sigmoid')(Subtract()([discriminator(image_inp), BatchAverageLayer(batch_size=batch_size)(discriminator(generator(random_inp)))]))],name='discriminator_trainer_real')
     discriminator_trainer_fake = Model(inputs=[image_inp, random_inp], outputs=[Activation('sigmoid')(Subtract()([discriminator(generator(random_inp)), BatchAverageLayer(batch_size=batch_size)(discriminator(image_inp))]))],name='discriminator_trainer_fake')
-    discriminator_trainer_real.compile(optimizer=RMSprop(lr=1e-4) if use_rmsprop else Adam(lr=1e-4, beta_1=.5), loss='binary_crossentropy')
-    discriminator_trainer_fake.compile(optimizer=RMSprop(lr=1e-4) if use_rmsprop else Adam(lr=1e-4, beta_1=.5), loss='binary_crossentropy')
+    discriminator_trainer_real.compile(optimizer=RMSprop(lr=learning_rate) if use_rmsprop else Adam(lr=learning_rate, beta_1=.5), loss='binary_crossentropy')
+    discriminator_trainer_fake.compile(optimizer=RMSprop(lr=learning_rate) if use_rmsprop else Adam(lr=learning_rate, beta_1=.5), loss='binary_crossentropy')
 
     generator.trainable = True
     discriminator.trainable = False
     generator_trainer_real = Model(inputs=[image_inp, random_inp], outputs=[Activation('sigmoid')(Subtract()([discriminator(image_inp), BatchAverageLayer(batch_size=batch_size)(discriminator(generator(random_inp)))]))], name='generator_trainer_real')
     generator_trainer_fake = Model(inputs=[image_inp, random_inp], outputs=[Activation('sigmoid')(Subtract()([discriminator(generator(random_inp)), BatchAverageLayer(batch_size=batch_size)(discriminator(image_inp))]))], name='generator_trainer_fake')
-    generator_trainer_real.compile(optimizer=RMSprop(lr=1e-4) if use_rmsprop else Adam(lr=1e-4, beta_1=.5), loss='binary_crossentropy')
-    generator_trainer_fake.compile(optimizer=RMSprop(lr=1e-4) if use_rmsprop else Adam(lr=1e-4, beta_1=.5), loss='binary_crossentropy')
+    generator_trainer_real.compile(optimizer=RMSprop(lr=learning_rate) if use_rmsprop else Adam(lr=learning_rate, beta_1=.5), loss='binary_crossentropy')
+    generator_trainer_fake.compile(optimizer=RMSprop(lr=learning_rate) if use_rmsprop else Adam(lr=learning_rate, beta_1=.5), loss='binary_crossentropy')
 
     generator.trainable = generator_old_trainable
     discriminator.trainable = discriminator_old_trainable
